@@ -20,13 +20,13 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
-	# Background.
+	# Background color.
 	$self->{'bg'} = 'black';
 
 	# Flip flag.
 	$self->{'flip'} = 1;
 
-	# Foreground.
+	# Foreground color.
 	$self->{'fg'} = 'white';
 
 	# Sizes.
@@ -101,28 +101,153 @@ sub create {
 
 # Set/Get image type.
 sub type {
-        my ($self, $type) = @_;
-        if ($type) {
-                $self->_check_type($type);
-                $self->{'type'} = $type;
-        }
-        return $self->{'type'};
+	my ($self, $type) = @_;
+	if ($type) {
+		$self->_check_type($type);
+		$self->{'type'} = $type;
+	}
+	return $self->{'type'};
 }
 
 # Check supported image type.
 sub _check_type {
-        my ($self, $type) = @_;
+	my ($self, $type) = @_;
 
-        # Check type.
-        if (none { $type eq $_ } ('bmp', 'gif', 'jpeg', 'png',
-                'pnm', 'raw', 'sgi', 'tga', 'tiff')) {
+	# Check type.
+	if (none { $type eq $_ } ('bmp', 'gif', 'jpeg', 'png',
+		'pnm', 'raw', 'sgi', 'tga', 'tiff')) {
 
-                err "Suffix '$type' doesn't supported.";
-        }
+		err "Suffix '$type' doesn't supported.";
+	}
 
-        return;
+	return;
 }
 
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Image::Checkerboard - Image generator for checkboards.
+
+=head1 SYNOPSIS
+
+ use Image::Checkerboard;
+ my $image = Image::Checkerboard->new(%parameters);
+ my $suffix = $image->create($path);
+ my $type = $image->type($type);
+
+=head1 METHODS
+
+=over 8
+
+=item B<new(%parameters)>
+
+ Constructor
+
+=over 8
+
+=item * B<bg>
+
+ Background color.
+ Default value is 'black'.
+
+=item * B<flip>
+
+ Flip flag. Means that each next video has reversed foreground and background.
+ Default value is 1.
+
+=item * B<fg>
+
+ Foreground color.
+ Default value is 'white'.
+
+=item * B<height>
+
+ Image height.
+ Default value is 1080.
+
+=item * B<type>
+
+ Image type.
+ Default value is 'jpeg'.
+
+=item * B<width>
+
+ Image width.
+ Default value is 1920.
+
+=back
+
+=item B<create($path)>
+
+ Create image.
+ Returns scalar value of supported file type.
+
+=item B<type([$type])
+
+ Set/Get image type.
+ Returns actual type of image.
+
+=back
+
+=head1 ERRORS
+
+ Mine:
+         Cannot write file to '$path'.",
+	         Error, %s
+         Suffix '%s' doesn't supported.
+
+ From Class::Utils::set_params():
+         Unknown parameter '%s'.
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Image::Checkerboard;
+
+ # Object.
+ my $obj = Image::Checkerboard->new;
+
+ # Print delay.
+ print $obj->create."\n";
+
+ # Output:
+ # jpeg
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>,
+L<Error::Pure>,
+L<Imager>,
+L<Imager::Fill>.
+
+=head1 SEE ALSO
+
+L<IBSmm::Generator::Image::Random>,
+L<IBSmm::Generator::Image::Real>.
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
