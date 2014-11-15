@@ -8,44 +8,44 @@ SYNOPSIS
      my $type = $image->type($type);
 
 METHODS
-    new(%parameters)
+    "new(%parameters)"
              Constructor
 
-            *       bg
+            *       "bg"
 
                      Background color.
                      Default value is 'black'.
 
-            *       flip
+            *       "flip"
 
                      Flip flag. Means that each next video has reversed foreground and background.
                      Default value is 1.
 
-            *       fg
+            *       "fg"
 
                      Foreground color.
                      Default value is 'white'.
 
-            *       height
+            *       "height"
 
                      Image height.
                      Default value is 1080.
 
-            *       type
+            *       "type"
 
                      Image type.
                      Default value is 'jpeg'.
 
-            *       width
+            *       "width"
 
                      Image width.
                      Default value is 1920.
 
-    create($path)
+    "create($path)"
              Create image.
              Returns scalar value of supported file type.
 
-    type([$type])
+    "type([$type])"
              Set/Get image type.
              Returns actual type of image.
 

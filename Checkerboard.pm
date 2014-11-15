@@ -146,50 +146,50 @@ Image::Checkerboard - Image generator for checkboards.
 
 =over 8
 
-=item B<new(%parameters)>
+=item C<new(%parameters)>
 
  Constructor
 
 =over 8
 
-=item * B<bg>
+=item * C<bg>
 
  Background color.
  Default value is 'black'.
 
-=item * B<flip>
+=item * C<flip>
 
  Flip flag. Means that each next video has reversed foreground and background.
  Default value is 1.
 
-=item * B<fg>
+=item * C<fg>
 
  Foreground color.
  Default value is 'white'.
 
-=item * B<height>
+=item * C<height>
 
  Image height.
  Default value is 1080.
 
-=item * B<type>
+=item * C<type>
 
  Image type.
  Default value is 'jpeg'.
 
-=item * B<width>
+=item * C<width>
 
  Image width.
  Default value is 1920.
 
 =back
 
-=item B<create($path)>
+=item C<create($path)>
 
  Create image.
  Returns scalar value of supported file type.
 
-=item B<type([$type])>
+=item C<type([$type])>
 
  Set/Get image type.
  Returns actual type of image.
