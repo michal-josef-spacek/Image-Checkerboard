@@ -4,7 +4,8 @@ use warnings;
 
 # Modules.
 use Image::Checkerboard;
-use Test::More 'tests' => 1;
+use Test::More 'tests' => 2;
+use Test::NoWarnings;
 
 # Test.
 is($Image::Checkerboard::VERSION, 0.01, 'Version.');
