@@ -29,7 +29,7 @@ requires:
   Error::Pure: 0.17
   Imager: 0
   Imager::Fill: 0
-  perl: 5.6.2
+  perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Image-Checkerboard
   homepage: https://github.com/tupinek/Image-Checkerboard
