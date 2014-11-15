@@ -189,7 +189,7 @@ Image::Checkerboard - Image generator for checkboards.
  Create image.
  Returns scalar value of supported file type.
 
-=item B<type([$type])
+=item B<type([$type])>
 
  Set/Get image type.
  Returns actual type of image.
