@@ -34,7 +34,7 @@ METHODS
             *       "type"
 
                      Image type.
-                     Default value is 'jpeg'.
+                     Default value is 'bmp'.
 
             *       "width"
 

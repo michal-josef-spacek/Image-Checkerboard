@@ -34,7 +34,7 @@ sub new {
 	$self->{'height'} = 1080;
 
 	# Image type.
-	$self->{'type'} = 'jpeg';
+	$self->{'type'} = 'bmp';
 
 	# Process params.
 	set_params($self, @params);
@@ -175,7 +175,7 @@ Image::Checkerboard - Image generator for checkboards.
 =item * C<type>
 
  Image type.
- Default value is 'jpeg'.
+ Default value is 'bmp'.
 
 =item * C<width>
 
