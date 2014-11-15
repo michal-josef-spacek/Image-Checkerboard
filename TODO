@@ -1,7 +1,8 @@
 TODO
 ====
-1. API kompatibilita s IBSmm::Generator::Image::Random a Real.
 2.
 
 Applied
 =======
+1. API kompatibilita s Image::Random a Image::Select.
+OK [20141115] skim
