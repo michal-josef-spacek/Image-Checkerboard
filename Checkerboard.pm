@@ -236,6 +236,10 @@ L<Imager::Fill>.
 L<IBSmm::Generator::Image::Random>,
 L<IBSmm::Generator::Image::Real>.
 
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Image-Checkerboard>.
+
 =head1 AUTHOR
 
 Michal Špaček L<mailto:skim@cpan.org>

@@ -81,6 +81,9 @@ DEPENDENCIES
 SEE ALSO
     IBSmm::Generator::Image::Random, IBSmm::Generator::Image::Real.
 
+REPOSITORY
+    <https://github.com/tupinek/Image-Checkerboard>.
+
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>
 
