@@ -82,7 +82,7 @@ DEPENDENCIES
     Class::Utils, Error::Pure, Imager, Imager::Fill.
 
 SEE ALSO
-    IBSmm::Generator::Image::Random, IBSmm::Generator::Image::Real.
+    Image::Random, Image::Select.
 
 REPOSITORY
     <https://github.com/tupinek/Image-Checkerboard>.

@@ -237,8 +237,8 @@ L<Imager::Fill>.
 
 =head1 SEE ALSO
 
-L<IBSmm::Generator::Image::Random>,
-L<IBSmm::Generator::Image::Real>.
+L<Image::Random>,
+L<Image::Select>.
 
 =head1 REPOSITORY
 
