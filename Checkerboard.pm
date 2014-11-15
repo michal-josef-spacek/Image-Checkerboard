@@ -198,13 +198,17 @@ Image::Checkerboard - Image generator for checkboards.
 
 =head1 ERRORS
 
- Mine:
+ new():
+         From Class::Utils::set_params():
+                 Unknown parameter '%s'.
+ create():
          Cannot write file to '$path'.",
 	         Error, %s
          Suffix '%s' doesn't supported.
 
- From Class::Utils::set_params():
-         Unknown parameter '%s'.
+ type():
+         Suffix '%s' doesn't supported.
+
 
 =head1 EXAMPLE
 
