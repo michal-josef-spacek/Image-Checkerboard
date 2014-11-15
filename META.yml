@@ -24,11 +24,10 @@ no_index:
     - inc
     - t
 requires:
-  Cwd: 0
-  English: 0
-  Exporter: 0
-  List::MoreUtils: 0
-  Readonly: 0
+  Class::Utils: 0.06
+  Error::Pure: 0.17
+  Imager: 0
+  Imager::Fill: 0
   perl: 5.6.2
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Image-Checkerboard

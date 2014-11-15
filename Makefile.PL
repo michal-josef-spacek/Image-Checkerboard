@@ -11,11 +11,10 @@ author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Image-Checkerboard';
 readme_from 'Checkerboard.pm';
-requires 'Cwd' => 0;
-requires 'English' => 0;
-requires 'Exporter' => 0;
-requires 'List::MoreUtils' => 0;
-requires 'Readonly' => 0;
+requires 'Class::Utils' => 0.06;
+requires 'Error::Pure' => 0.17;
+requires 'Imager' => 0;
+requires 'Imager::Fill' => 0;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Image-Checkerboard';
