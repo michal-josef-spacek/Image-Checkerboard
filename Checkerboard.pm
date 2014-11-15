@@ -217,16 +217,26 @@ Image::Checkerboard - Image generator for checkboards.
  use warnings;
 
  # Modules.
+ use File::Temp qw(tempfile);
  use Image::Checkerboard;
+
+ # Temporary file.
+ my (undef, $temp) = tempfile();
 
  # Object.
  my $obj = Image::Checkerboard->new;
 
- # Print delay.
- print $obj->create."\n";
+ # Create image.
+ my $type = $obj->create($temp);
+
+ # Print out type.
+ print $type."\n";
+
+ # Unlink file.
+ unlink $temp;
 
  # Output:
- # jpeg
+ # bmp
 
 =head1 DEPENDENCIES
 
