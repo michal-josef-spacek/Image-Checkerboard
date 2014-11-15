@@ -1,0 +1,101 @@
+NAME
+    Image::Checkerboard - Image generator for checkboards.
+
+SYNOPSIS
+     use Image::Checkerboard;
+     my $image = Image::Checkerboard->new(%parameters);
+     my $suffix = $image->create($path);
+     my $type = $image->type($type);
+
+METHODS
+    new(%parameters)
+             Constructor
+
+            *       bg
+
+                     Background color.
+                     Default value is 'black'.
+
+            *       flip
+
+                     Flip flag. Means that each next video has reversed foreground and background.
+                     Default value is 1.
+
+            *       fg
+
+                     Foreground color.
+                     Default value is 'white'.
+
+            *       height
+
+                     Image height.
+                     Default value is 1080.
+
+            *       type
+
+                     Image type.
+                     Default value is 'jpeg'.
+
+            *       width
+
+                     Image width.
+                     Default value is 1920.
+
+    create($path)
+             Create image.
+             Returns scalar value of supported file type.
+
+    type([$type])
+             Set/Get image type.
+             Returns actual type of image.
+
+ERRORS
+     Mine:
+             Cannot write file to '$path'.",
+                     Error, %s
+             Suffix '%s' doesn't supported.
+
+     From Class::Utils::set_params():
+             Unknown parameter '%s'.
+
+EXAMPLE
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Image::Checkerboard;
+
+     # Object.
+     my $obj = Image::Checkerboard->new;
+
+     # Print delay.
+     print $obj->create."\n";
+
+     # Output:
+     # jpeg
+
+DEPENDENCIES
+    Class::Utils, Error::Pure, Imager, Imager::Fill.
+
+SEE ALSO
+    IBSmm::Generator::Image::Random, IBSmm::Generator::Image::Real.
+
+AUTHOR
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 192:
+        Unterminated B<...> sequence
+

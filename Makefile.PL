@@ -10,6 +10,7 @@ abstract 'Perl class for image checkerboards creating.';
 author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Image-Checkerboard';
+readme_from 'Checkerboard.pm';
 requires 'Cwd' => 0;
 requires 'English' => 0;
 requires 'Exporter' => 0;
