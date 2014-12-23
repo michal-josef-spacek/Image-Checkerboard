@@ -241,7 +241,7 @@ Image::Checkerboard - Image generator for checkboards.
 =begin html
 
 <a href="https://raw.githubusercontent.com/tupinek/Image-Checkerboard/master/images/ex1.png">
-  <img src="https://raw.githubusercontent.com/tupinek/Image-Checkerboard/master/images/ex1.png" alt="Generated image" width="300px" height="300px" />
+  <img src="https://raw.githubusercontent.com/tupinek/Image-Checkerboard/master/images/ex1.png" alt="Generated image" width="533px" height="300px" />
 </a>
 
 =end html
