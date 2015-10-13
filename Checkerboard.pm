@@ -9,6 +9,7 @@ use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Imager;
 use Imager::Fill;
+use List::MoreUtils qw(none);
 
 # Version.
 our $VERSION = 0.03;
@@ -48,6 +49,11 @@ sub new {
 		'ysize' => $self->{'height'},
 	);
 
+	# Check type.
+	if (defined $self->{'type'}) {
+		$self->_check_type($self->{'type'});
+	}
+
 	# Object.
 	return $self;
 }
@@ -68,9 +74,6 @@ sub create {
 		if ($suffix eq 'jpg') {
 			$suffix = 'jpeg';
 		}
-
-		# Check type.
-		$self->_check_type($suffix);
 	} else {
 		$suffix = $self->{'type'};
 	}

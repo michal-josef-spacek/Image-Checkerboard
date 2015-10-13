@@ -1,4 +1,5 @@
 0.03
+ - Fix 'type' parameter check.
  - Improve SEE ALSO section in doc.
  - Improve type constructor parameter doc.
  - Improve width of output image for EXAMPLE section in doc.
