@@ -175,6 +175,16 @@ Image::Checkerboard - Image generator for checkboards.
 =item * C<type>
 
  Image type.
+ Possible types are:
+ - bmp
+ - gif
+ - jpeg
+ - png
+ - pnm
+ - raw
+ - sgi
+ - tga
+ - tiff
  Default value is 'bmp'.
 
 =item * C<width>

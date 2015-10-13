@@ -1,5 +1,6 @@
 0.03
  - Improve SEE ALSO section in doc.
+ - Improve type constructor parameter doc.
  - Improve width of output image for EXAMPLE section in doc.
  - Move author tests to xt/ directory.
  - Update Module::Install to 1.16 version.
