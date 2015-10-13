@@ -3,6 +3,8 @@ Checkerboard.pm
 examples/ex1.pl
 images/ex1.png
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -17,7 +19,7 @@ MANIFEST			This list of files
 META.yml
 README
 SIGNATURE
-t/Image-Checkerboard/00-use.t
-t/Image-Checkerboard/01-version.t
-t/Image-Checkerboard/02-pod_coverage.t
-t/Image-Checkerboard/03-pod.t
+t/Image-Checkerboard/01-use.t
+t/Image-Checkerboard/02-version.t
+xt/Image-Checkerboard/01-pod_coverage.t
+xt/Image-Checkerboard/02-pod.t
