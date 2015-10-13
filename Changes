@@ -1,4 +1,5 @@
 0.03
+ - Add tests for constructor.
  - Fix 'type' parameter check.
  - Improve SEE ALSO section in doc.
  - Improve type constructor parameter doc.
