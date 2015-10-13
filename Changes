@@ -3,6 +3,7 @@
  - Improve type constructor parameter doc.
  - Improve width of output image for EXAMPLE section in doc.
  - Move author tests to xt/ directory.
+ - Rewrite error message for 'type' parameter to same way as Image::Random.
  - Update Module::Install to 1.16 version.
  - Update copyright years.
 

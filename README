@@ -66,10 +66,10 @@ ERRORS
      create():
              Cannot write file to '$path'.",
                      Error, %s
-             Suffix '%s' doesn't supported.
+             Image type '%s' doesn't supported.
 
      type():
-             Suffix '%s' doesn't supported.
+             Image type '%s' doesn't supported.
 
 EXAMPLE
      # Pragmas.
