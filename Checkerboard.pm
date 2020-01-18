@@ -1,17 +1,14 @@
 package Image::Checkerboard;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Imager;
 use Imager::Fill;
 use List::MoreUtils qw(none);
 
-# Version.
 our $VERSION = 0.04;
 
 # Constructor.
@@ -225,11 +222,9 @@ Image::Checkerboard - Image generator for checkboards.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use File::Temp qw(tempfile);
  use Image::Checkerboard;
 
