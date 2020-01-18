@@ -33,7 +33,7 @@ requires:
   perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Image-Checkerboard
-  homepage: https://github.com/tupinek/Image-Checkerboard
+  homepage: https://github.com/michal-josef-spacek/Image-Checkerboard
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/Image-Checkerboard
+  repository: git://github.com/michal-josef-spacek/Image-Checkerboard
 version: '0.04'
