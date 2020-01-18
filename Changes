@@ -1,4 +1,4 @@
-0.04
+0.04 2020-01-18T18:52:21+01:00
  - Fix Makefile.PL fails with no '.' in @INC.
  - Update .travis.yml to reality.
  - Update Module::Install to 1.19 version.
