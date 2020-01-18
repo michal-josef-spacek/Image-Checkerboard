@@ -1,5 +1,6 @@
 0.04
  - Update .travis.yml to reality.
+ - Update Module::Install to 1.19 version.
 
 0.03 2015-10-13T11:39:00+02:00
  - Add tests for constructor.
