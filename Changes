@@ -1,4 +1,4 @@
-0.05
+0.05 2020-05-24T18:42:06+02:00
  - Add tests for type() method.
  - Fix list of dependencies in doc.
  - Improve LICENSE AND COPYRIGHT section in doc.
