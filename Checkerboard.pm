@@ -138,6 +138,7 @@ Image::Checkerboard - Image generator for checkboards.
 =head1 SYNOPSIS
 
  use Image::Checkerboard;
+
  my $image = Image::Checkerboard->new(%parameters);
  my $suffix = $image->create($path);
  my $type = $image->type($type);
