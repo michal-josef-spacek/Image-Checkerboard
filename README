@@ -97,7 +97,7 @@ EXAMPLE
      # bmp
 
 DEPENDENCIES
-    Class::Utils, Error::Pure, Imager, Imager::Fill.
+    Class::Utils, Error::Pure, Imager, Imager::Fill, List::MoreUtils.
 
 SEE ALSO
     Image::Random

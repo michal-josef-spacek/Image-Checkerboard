@@ -259,7 +259,8 @@ Image::Checkerboard - Image generator for checkboards.
 L<Class::Utils>,
 L<Error::Pure>,
 L<Imager>,
-L<Imager::Fill>.
+L<Imager::Fill>,
+L<List::MoreUtils>.
 
 =head1 SEE ALSO
 
