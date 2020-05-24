@@ -145,11 +145,13 @@ Image::Checkerboard - Image generator for checkboards.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%parameters)>
+ my $image = Image::Checkerboard->new(%parameters);
 
- Constructor
+Constructor.
+
+Returns instance of object.
 
 =over 8
 
@@ -195,17 +197,21 @@ Image::Checkerboard - Image generator for checkboards.
 
 =back
 
-=item C<create($path)>
+=head2 C<create>
 
- Create image.
- Returns scalar value of supported file type.
+ my $suffix = $image->create($path);
 
-=item C<type([$type])>
+Create image.
 
- Set/Get image type.
- Returns actual type of image.
+Returns scalar value of supported file type.
 
-=back
+=head2 C<type>
+
+ my $type = $image->type($type);
+
+Set/Get image type.
+
+Returns actual type of image.
 
 =head1 ERRORS
 

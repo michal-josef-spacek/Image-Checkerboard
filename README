@@ -9,56 +9,66 @@ SYNOPSIS
      my $type = $image->type($type);
 
 METHODS
-    "new(%parameters)"
-             Constructor
+  "new"
+     my $image = Image::Checkerboard->new(%parameters);
 
-            *       "bg"
+    Constructor.
 
-                     Background color.
-                     Default value is 'black'.
+    Returns instance of object.
 
-            *       "flip"
+    *       "bg"
 
-                     Flip flag. Means that each next video has reversed foreground and background.
-                     Default value is 1.
+             Background color.
+             Default value is 'black'.
 
-            *       "fg"
+    *       "flip"
 
-                     Foreground color.
-                     Default value is 'white'.
+             Flip flag. Means that each next video has reversed foreground and background.
+             Default value is 1.
 
-            *       "height"
+    *       "fg"
 
-                     Image height.
-                     Default value is 1080.
+             Foreground color.
+             Default value is 'white'.
 
-            *       "type"
+    *       "height"
 
-                     Image type.
-                     Possible types are:
-                     - bmp
-                     - gif
-                     - jpeg
-                     - png
-                     - pnm
-                     - raw
-                     - sgi
-                     - tga
-                     - tiff
-                     Default value is 'bmp'.
+             Image height.
+             Default value is 1080.
 
-            *       "width"
+    *       "type"
 
-                     Image width.
-                     Default value is 1920.
+             Image type.
+             Possible types are:
+             - bmp
+             - gif
+             - jpeg
+             - png
+             - pnm
+             - raw
+             - sgi
+             - tga
+             - tiff
+             Default value is 'bmp'.
 
-    "create($path)"
-             Create image.
-             Returns scalar value of supported file type.
+    *       "width"
 
-    "type([$type])"
-             Set/Get image type.
-             Returns actual type of image.
+             Image width.
+             Default value is 1920.
+
+  "create"
+     my $suffix = $image->create($path);
+
+    Create image.
+
+    Returns scalar value of supported file type.
+
+  "type"
+     my $type = $image->type($type);
+
+    Set/Get image type.
+
+    Returns actual type of image.
 
 ERRORS
      new():

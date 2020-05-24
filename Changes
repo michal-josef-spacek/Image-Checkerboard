@@ -2,6 +2,7 @@
  - Fix list of dependencies in doc.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SYNOPSIS section in doc.
+ - Rewrite METHODS in doc to =head2 sections.
 
 0.04 2020-01-18T18:52:21+01:00
  - Fix Makefile.PL fails with no '.' in @INC.
