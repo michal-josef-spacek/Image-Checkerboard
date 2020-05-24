@@ -1,4 +1,5 @@
 0.05
+ - Improve LICENSE AND COPYRIGHT section in doc.
 
 0.04 2020-01-18T18:52:21+01:00
  - Fix Makefile.PL fails with no '.' in @INC.
